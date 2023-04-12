@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Challenge ONE Sprint 01</title>
+</head>
+<body>
+    <head>
+        <h1></h1>
+    </head>
+    <main>
+        <div class="cuadro-texto">
+            <p>Texto <input type="text" name="texto1" value="Texto de prueba" class="texto1"> </p>
+        </div>
+        <div class="botones">
+            <button id="btn-encripta">Encriptar</button>
+            <button class="btn-desencripta">Desencriptar</button>
+        </div>
+        <div class="cuadro-mostrar">
+            <p>resultado <input type="text" name="texto2" class="texto2"> </p>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+<script>
+
+    var reglaLetras = ["a","e","i","o","u"]
+    var reglaCambio = ["ai","enter","imes","ober","ufat"]
+    var fraseUsuario = document.querySelector("input.texto1");
+    var fraseResultado = document.querySelector("input.texto2");
+    var btnEncripta = document.getElementById("btn-encripta");
+    var btnDesencripta = document.querySelector("btn-desencripta");
+
+
+    function encriptar(){
+        
+        var fraseOriginal = fraseUsuario.value;
+        var fraseCambiada = "";
+        var caracter = "";
+        for (i=0;i<=fraseOriginal.length;i++) {
+            caracter = fraseOriginal.charAt(i);
+            if ( reglaLetras.indexOf(caracter)>=0 ) {
+                /* alert(caracter+" "+reglaLetras.indexOf(caracter)+" "+reglaCambio[reglaLetras.indexOf(caracter)]) */
+                fraseCambiada=fraseCambiada+reglaCambio[reglaLetras.indexOf(caracter)];
+            }
+            else {
+                fraseCambiada=fraseCambiada+caracter;
+            }
+        }
+        alert(fraseCambiada);
+        fraseResultado.value=fraseCambiada;
+        fraseResultado.focus();
+        return;
+    }
+
+    function desencriptar(frase){
+
+    }
+
+    document.write("<p>lorem ipsum</p>");
+
+    btnEncripta.onclick=encriptar;
+
+
+</script>
+</html>
