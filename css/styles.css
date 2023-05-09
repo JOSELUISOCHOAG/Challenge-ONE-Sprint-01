@@ -4,7 +4,7 @@
 
 html {
     box-sizing: content-box;
-    background-image: url(/img/fondo.png);
+    background-image: url(../img/fondo.png);
     background-size: contain;
     background-repeat: round;
 }
