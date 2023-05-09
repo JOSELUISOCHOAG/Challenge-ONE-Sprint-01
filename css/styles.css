@@ -386,7 +386,7 @@ footer p {
 @media only screen and (max-width: 768px) {
     html {
         box-sizing: border-box;
-        background-image: url(/img/fondo.png);
+        background-image: url(../img/fondo.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
