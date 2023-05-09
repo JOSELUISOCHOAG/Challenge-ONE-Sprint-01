@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Challenge ONE Sprint 01</title>
-  </head>
-  <body>
     <head>
-      <h1></h1>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <title>Challenge ONE Sprint 01</title>
     </head>
-    <main>
-      <div class="cuadro-texto">
-        <!-- <p>Texto <input type="textarea" name="texto1" value="Texto de prueba" class="texto1"> </p> -->
-        <label for="texto1">Texto a Encriptar</label>
-        <textarea name="texto1" id="texto1" cols="30" rows="10"></textarea>
-      </div>
-      <div class="botones">
-        <button id="btn-encripta">Encriptar</button>
-        <button id="btn-desencripta">Desencriptar</button>
-      </div>
-      <div class="cuadro-mostrar">
-        <!-- <p>resultado <input type="textarea" name="texto2" class="texto2"> </p> -->
-        <label for="texto2">Texto encriptado</label>
-        <textarea name="texto2" id="texto2" cols="30" rows="10"></textarea>
-        <button id="btn-copiar">Copiar resultado</button>
-      </div>
-    </main>
-    <footer></footer>
-  </body>
-
-  <script type="text/javascript" src="js/project.js">;
-  </script>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Challenge ONE Sprint 01</h1>
+                <h1>Encriptador v1.0</h1>
+            </div>
+        </header>
+        <main class="main-container">
+            <!-- section para ingresar el texto a procesar-->
+            <section class="cuadro-texto">
+                <div class="textarea1">
+                    <label for="texto1">Texto a Encriptar</label>
+                    <textarea
+                        name="texto1"
+                        id="texto1"
+                        cols="30"
+                        rows="10"
+                        placeholder="Ingrese su texto aqui..."
+                        style="border: none"
+                    ></textarea>
+                    <p id="msgletras">&#10071; Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button id="btn-encripta">Encriptar</button>
+                    <button id="btn-desencripta">Desencriptar</button>
+                    <button id="btn-limpiar">Reiniciar</button>
+                </div>
+            </section>
+            <!-- section de mostrar el resultado-->
+            <section class="cuadro-mostrar" id="cuadro-mostrar">
+                <div class="imagen">
+                <img
+                    class="imgMostrar"
+                    src="/img/Figura.png"
+                    alt="No ha nada que mostrar"
+                />
+                <p id="msgalert">Ningun mensaje a sido procesado.!</p>
+                </div>
+                <div id="resultado" class="resultado">
+                    <div class="textarea2">
+                        <label for="texto2">Resultado</label>
+                        <textarea
+                            class="textomostrar"
+                            readonly
+                            name="texto2"
+                            id="texto2"
+                            cols="30"
+                            rows="10"></textarea>
+                            <p>.</p>
+                    </div>
+                    <div class="boton-copiar">
+                        <button class="btn-copiar" id="btn-copiar">
+                            ~ Copiar ~
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyrigth JoseLuisOchoa 2023.</p>
+            <p>@JoseLuisOchoa</p>
+            <a href="https://www.linkedin.com/in/joseluisochoag1976/" target="_blank" rel="noopener noreferrer"> 
+                <img src="/img/linkedin.png" alt="" sizes="" srcset=""> 
+            </a>            
+            <a href="https://www.github.com/JoseLuisOchoag" target="_blank" rel="noopener noreferrer"> 
+                <img src="/img/git.png" alt="" sizes="" srcset=""> 
+            </a>
+        </footer>
+    </body>
+    <script type="text/javascript" src="js/project.js">
+        ;
+    </script>
 </html>
