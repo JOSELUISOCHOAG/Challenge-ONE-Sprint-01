@@ -141,7 +141,7 @@ function copiarResultado(fraseResultado) {
     } else {
         fraseResultado.select();
         document.execCommand("copy");
-        alert("Copiado");
+        window.alert("Resultado copiado al portapapeles.!");
     }
     fraseUsuario.value = "";
     return true;

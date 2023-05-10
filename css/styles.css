@@ -84,7 +84,7 @@ p {
 .botones button {
     width: 30%;
     height: 150%;
-    font-size: 80%;
+    font-size: 90%;
     font-weight: bolder;
     border: none;
     border-radius: 5px;
@@ -186,7 +186,7 @@ p {
 .btn-copiar {
     width: 55%;
     height: 38px;
-    font-size: 80%;
+    font-size: 90%;
     font-weight: bolder;
     border: none;
     border-radius: 5px;
@@ -212,14 +212,20 @@ footer p {
     color: white;
     font-weight: bold;
 }
-/*
+
+footer img {
+  margin: 0 10px;
+  width: 32px;
+  height: 32px;
+}
+
 
   #btn-encripta {
     min-width: 130px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -247,7 +253,7 @@ footer p {
     top: 0;
     height: 0;
     width: 100%;
-    background: #495057;
+    background: #9bb5cf;
   }
   #btn-encripta:active {
     content: "*";
@@ -255,12 +261,13 @@ footer p {
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);        
   }
 
+  
   #btn-desencripta {
     min-width: 130px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -289,7 +296,7 @@ footer p {
     bottom: 0;
     height: 0;
     width: 100%;
-    background: #495057;
+    background: #9bb5cf;
   }
   #btn-desencripta:active {
     content: "*";
@@ -303,7 +310,7 @@ footer p {
     height: 40px;
     color: #fff;
     padding: 5px 10px;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -332,7 +339,7 @@ footer p {
     top: 0;
     width: 0;
     height: 100%;
-    background: #495057;
+    background: #9bb5cf;
   }
   #btn-limpiar:active {
     content: "*";
@@ -345,7 +352,7 @@ footer p {
     height: 40px;
     color: #fff;
     padding: 5px 10px;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -373,7 +380,7 @@ footer p {
     top: 0;
     width: 0;
     height: 100%;
-    background: #495057;
+    background: #9bb5cf;
   }
 
   #btn-copiar:active {
@@ -381,7 +388,7 @@ footer p {
     transform: scale(1.2);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);     
   } 
-*/
+
 
 @media only screen and (max-width: 768px) {
     html {
